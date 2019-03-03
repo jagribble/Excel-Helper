@@ -1,9 +1,21 @@
 import React from 'react';
-import Markdown from 'react-markdown';
+import ChartRender from './ChartRender';
 
-const Home = (props) => {
-  const { text } = props;
-  return (<Markdown source={text} />);
+const Home = () => {
+  return (
+    <ChartRender
+      title="Table rendered from data"
+      data={[{
+        name: 'Test 1', value: 10,
+      }, {
+        name: 'Test 2', value: 12,
+      }, {
+        name: 'Test 3', value: 3,
+      }, {
+        name: 'Test 4', value: 5,
+      }]}
+    />
+  );
 };
 
 export default Home;

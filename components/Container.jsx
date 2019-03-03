@@ -6,6 +6,7 @@ const drawerWidth = 240;
 const styles = (theme) => {
   return {
     content: {
+      marginTop: 80,
       flexGrow: 1,
       padding: theme.spacing.unit * 3,
       transition: theme.transitions.create('margin', {
@@ -15,6 +16,7 @@ const styles = (theme) => {
       marginLeft: 0,
     },
     contentShift: {
+      marginTop: 80,
       padding: theme.spacing.unit * 3,
       transition: theme.transitions.create('margin', {
         easing: theme.transitions.easing.easeOut,
@@ -27,7 +29,7 @@ const styles = (theme) => {
 
 const Container = (props) => {
   const {
-    classes, theme, open, mobile, children,
+    classes, open, mobile, children,
   } = props;
 
   return (
